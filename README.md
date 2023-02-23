@@ -1,4 +1,6 @@
 # Chromatics
+
+## Mathematical Background/Basis
 In a branch of Mathematics known as Combinatorics, graphs involve two main building blocks:
 - Vertices
 - Edges
@@ -24,7 +26,15 @@ to the new "merged" vertex
 
 If either or both of the two new graphs are still too complicated, we can repeat this process for those graphs and even subsequent
 ones until we finally reach definite calculations.
-This process is done in the python algorithm file using recursion and can be done for many complicated graphs.
+
+
+## Program interactive GUI implementation
+The python program algorithm.py uses the **tkinter** module to create a graphical interface for the user to interact with.
+Upon running the program, the user can click on empty space in the **canvas** to create a new vertex. In order to connect two
+vertices via an edge, the user can click on a vertex and it will highlight red. Then the user just needs to click on any other
+vertex and an edge will be created that connects the two vertices.
+## Program algorithm implementation
+The reduction algorithm process is done in the python algorithm file using recursion and can be done for many complicated graphs.
 For its base cases, it checks for trees and complete graphs.
 1. A tree is a graph that has no loops/cycles and each vertex has at least one connection
 2. A complete graph is a graph where every vertex is connected to every other vertex
