@@ -158,25 +158,7 @@ def remove_edge(v1: Vertex, v2: Vertex, edge_list: list[tuple[Vertex]]) -> None:
             break
         curr_index += 1
             
-#algorithm(graph G) {
-#    
-#    int remove;
-#    int merge;
-#
-#    // base case
-#    if (G is Tree or Complete) {
-#        return Chromatic Polynomial;
-#    }
-#    // Breakdown ----
-#    // remove 
-#    int remove = algorithm(removeEdge(G));
-#    
-#    // merge 
-#    int merge = algorithm(mergeVert(G));
-#    return (remove - merge); // chromatic polynomial
-#}
-#
-#// where removeEdge(Graph G); and mergeVert(Graph G) are separate methods.
+
 def algorithm(vertex_list: list[Vertex], edge_list: list[tuple[Vertex]], color_count) -> int:
     degrees = vertex_degrees(vertex_list, edge_list)
     non_connected_graph_result = 0
